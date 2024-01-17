@@ -1,8 +1,9 @@
 import React from 'react'
+import YouTubeSearch from '../../features/api/YouTubeSearch'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <YouTubeSearch />
   )
 }
 
