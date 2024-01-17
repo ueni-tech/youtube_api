@@ -12,12 +12,15 @@ const YouTubeSearch = () => {
           params: {
             part: 'snippet',
             maxResults: 10,
-            q: 'ムカイ',
+            q: 'にじさんじ',
             type: 'video',
+            eventType: 'live',
+            order: 'viewCount',
+            regionCode: 'JP',
             key: apiKey
           }
         });
-
+        console.log(response);
         setVideos(response.data.items);
       } catch (error) {
         console.error('YouTube API Error:', error);
